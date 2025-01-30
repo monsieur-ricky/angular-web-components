@@ -61,3 +61,20 @@ export class AppComponent {
     this.count.set(this.value());
   }
 }
+
+/**
+ * Version that handles non-numeric values:
+ */
+/*
+  count = linkedSignal(() => this.convertToNumber(this.value()));
+
+  onReset(): void {
+    this.count.set(this.convertToNumber(this.value()));
+  }
+
+  private convertToNumber(value: string | number): number {
+    return isNaN(parseInt(value.toString(), 10))
+      ? 0
+      : parseInt(value.toString(), 10);
+  }
+ */
