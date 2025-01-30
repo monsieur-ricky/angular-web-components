@@ -1,16 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'awc-root',
-  imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
-  styles: [],
+  imports: [],
+  template: ` <h1>Welcome to {{ title }}!</h1> `,
+  styles: []
 })
 export class AppComponent {
-  title = 'angular-web-components';
+  title = 'Angular Web Components';
 }
