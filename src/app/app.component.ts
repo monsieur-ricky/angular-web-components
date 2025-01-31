@@ -55,10 +55,10 @@ export class AppComponent {
   title = input('Web Components with Angular');
   value = input(0);
 
-  count = linkedSignal(() => this.value());
+  count = linkedSignal(() => Number(this.value()));
 
   onReset(): void {
-    this.count.set(this.value());
+    this.count.set(Number(this.value()));
   }
 }
 
